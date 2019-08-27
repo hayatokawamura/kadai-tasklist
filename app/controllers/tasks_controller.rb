@@ -38,6 +38,7 @@ def update
        flash.now[:danger] = 'タスクは更新されませんでした'
        render :edit
     end
+end
     
 def destroy
     @task = Task.find(params[:id])
@@ -47,7 +48,6 @@ def destroy
     redirect_to tasks_url
     end
 end 
-end
 
   private
 
